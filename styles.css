@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@100;300&display=swap');
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;;
+}
+
+
+#div_header{
+    margin-top: 2vh;
+    background-color: #1BBBF3;
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+#button_low{
+    background: #FFFC94;
+}
+
+#button_low:hover{
+    background: #FEF600;
+}
+
+#button_medium{
+    background: #FFD773;
+}
+
+#button_medium:hover{
+    background: #FFB600;
+}
+
+#button_high{
+    background: #FF807A;
+}
+
+#button_high:hover{
+    background: #FF0C00;
+    color:white;
+}
+
+
+
+#add_content_div{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4vh;
+    height: 6vh;
+}
+
+#items_container{
+    text-align: center;
+    padding: 0;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+li.checked {
+    background: teal;
+    color: white;
+    text-decoration: line-through;
+}
+
+
+li.low{
+    background: #FFFC94;
+}
+
+li.low:hover{
+    background: #FEF600;
+}
+
+
+li.medium{
+    background: #FFD773;
+}
+
+li.medium:hover{
+    background: #FFB600;
+}
+
+
+li.high{
+    background: #FF807A;
+}
+
+li.high:hover{
+    background: #FF0C00;
+    color:white;
+}
+
+li.unknown{
+    background: #F0F0F0;
+    color:black;
+}
+
+li.unknown:hover{
+    background: #CCCCCC;
+    color:black;
+}
+
+
+
+
+li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 13px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+
+#button_clear{
+    margin-top: 3vh;
+}
+
+
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+
+.close:hover{
+    background-color: crimson;
+    color: white;
+}
+
+
+.modify{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.modify:hover{
+    background-color: green;
+    color: white;
+}
+
+
+.fa-github:hover{
+    color: rgb(0, 110, 255);
+}
+
+.fa-linkedin:hover{
+    color: rgb(0, 110, 255);
+}
+
+
+
+
+
